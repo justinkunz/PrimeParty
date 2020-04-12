@@ -1,0 +1,30 @@
+{
+  "description": "Hi",
+  "icons": {
+    "128": "icon.png",
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "name": "Youtube Party",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "ChromiePop"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["actions.js"],
+      "css": ["style.css"],
+      "all_frames": true
+    }
+  ],
+  "permissions": ["*://*/*"],
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js; object-src 'self'"
+}

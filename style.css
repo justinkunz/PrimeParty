@@ -1,0 +1,21 @@
+.start-party--yt {
+  text-transform: uppercase;
+  background-color: #cc0000;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.party-url--yt {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  background: #0048cc;
+  border-radius: 4px;
+  margin: 5px;
+  color: white;
+  padding: 10px;
+}
